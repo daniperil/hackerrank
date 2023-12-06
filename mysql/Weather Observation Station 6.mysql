@@ -1,0 +1,13 @@
+/*
+ * Problem: Weather Observation Station 6
+ * Problem Description: Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+ */
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LOWER(SUBSTRING(CITY, 1, 1)) IN ('a', 'e', 'i', 'o', 'u');
+
+ /*
+* SUBSTRING()to get the first letter of the city name function in SQL, the numbers 1, 1 represent the starting position and the length of the substring to be extracted.
+* LOWER() to ensure case-insensitive comparison
+*/
